@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "A flashcard generator application using Node.js and JavaScript constructors",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizMasoudi/Flashcard-Generator.git"
+  },
+  "author": "LN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizMasoudi/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/LizMasoudi/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
+}
