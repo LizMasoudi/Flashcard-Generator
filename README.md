@@ -1,4 +1,4 @@
-# Project Title
+# Flashcard Generator
 
 This application is useful for creating two different types of flashcards: 
 - Basic Flashcards: flashcards with text on the front and the back 
