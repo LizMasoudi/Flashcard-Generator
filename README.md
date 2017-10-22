@@ -1,7 +1,8 @@
 # Project Title
 
 This application is useful for creating two different types of flashcards: 
-Basic Flashcards: 
+- Basic Flashcards: flashcards with text on the front and the back 
+- Cloze Flashcards: flashcards that have a partial text on the front (full text - a cloze phrase) and the cloze phrase on the back 
 
 ## Getting Started
 

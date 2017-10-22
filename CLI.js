@@ -25,13 +25,15 @@ function createCard() {
                 }
             ]).then(function (answers) {
                 var basicCard = new BasicCard(answers.front, answers.back);
+                console.log("--------------------");
                 console.log("Card Front: " + "\n" + basicCard.front);
                 console.log("--------------------");
                 console.log("Card Back: " + "\n" + basicCard.back);
+                console.log("--------------------");
                 createCard();
             })
         }
-        else if (answer.cardType === "a cloze card"){
+        else if (answer.cardType === "a cloze card") {
             inquirer.prompt([
                 {
                     name: "fullText",
@@ -44,28 +46,19 @@ function createCard() {
             ]).then(function (answers) {
                 var clozeCard = ClozeCard(answers.fullText, answers.cloze);
                 console.log("--------------------");
-                console.log("Card Full Text: " + "\n" + clozeCard.fullText);
+                // console.log("Card Full Text: " + "\n" + clozeCard.fullText);
+                // console.log("--------------------");
+                console.log("Card Front: " + "\n" + clozeCard.partial);
                 console.log("--------------------");
-                console.log("Card Cloze Phrase: " + "\n" + clozeCard.cloze);
+                console.log("Card Back: " + "\n" + clozeCard.cloze);
                 console.log("--------------------");
-                console.log("Card Partial Text: " + "\n" + clozeCard.partial);
-                console.log("--------------------");
+
                 createCard();
             })
         }
-        else if (answer.cardType === "I'm done making cards"){
+        else if (answer.cardType === "I'm done making cards") {
             process.exit();
         }
     });
 }
-
 createCard();
-
-// var firstPresidentCloze = new ClozeCard (
-//     "George Washington was the first president of the United States",
-//     "George Washington"
-// );
-
-// console.log(firstPresidentCloze.cloze);
-// console.log(firstPresidentCloze.partial);
-// console.log(firstPresidentCloze.fullText);
